@@ -66,7 +66,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', selectedFile);
       
-      const response = await fetch('http://localhost:8000/upload-ocr', {
+      const response = await fetch('https://parte-1-back.onrender.com/upload-ocr', {
         method: 'POST',
         body: formData,
       });
